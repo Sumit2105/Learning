@@ -30,22 +30,22 @@ class Loginscreen extends Component{
     handleClick(event){
         var loginmessage;
         if(this.state.isLogin){
-            var loginscreen=[];
-            loginscreen.push(<Register key="register" parentContext={this}/>);
+            var loginscreen1=[];
+            loginscreen1.push(<Register key="register" parentContext={this}/>);
             loginmessage = "Already registered.Go to Login";
             this.setState({
-                loginscreen: loginscreen,
+                loginscreen: loginscreen1,
                 loginmessage: loginmessage,
                 buttonLabel: "Login",
                 isLogin: false
             })
         }
         else{
-            var loginscreen=[];
-            loginscreen.push(<Login parentContext={this}/>);
+            var loginscreen2=[];
+            loginscreen2.push(<Login key="login" parentContext={this}/>);
             loginmessage="Not Registered Yet.Go to registration";
             this.setState({
-                loginscreen: loginscreen,
+                loginscreen: loginscreen2,
                 loginmessage: loginmessage,
                 buttonLabel: "Register",
                 isLogin: true

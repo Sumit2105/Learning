@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+//import logo from './logo.svg';
 import './App.css';
 //import injectTapEventPlugin from 'react-tap-event-plugin';
 import Loginscreen from './Loginscreen';
@@ -31,9 +31,5 @@ class App extends Component {
     );
   }
 }
-
-const style = {
-  margin: 15,
-};
 
 export default App;
